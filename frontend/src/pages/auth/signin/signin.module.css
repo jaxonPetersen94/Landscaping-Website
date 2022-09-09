@@ -1,0 +1,43 @@
+#container {
+  display: flex;
+  height: calc(100vh - 100px);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#signInBox {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 384px;
+  padding: 32px 0 16px 0;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.input {
+  height: 50px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.input:focus {
+  outline: none;
+}
+
+#signInBtn {
+  height: 50px;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}

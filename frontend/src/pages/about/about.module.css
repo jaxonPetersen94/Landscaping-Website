@@ -1,0 +1,76 @@
+#topBlock {
+  display: flex;
+  position: relative;
+  top: 16px;
+  height: 224px;
+  justify-content: center;
+  background-color: #287c2f;
+}
+
+#title {
+  display: block;
+  position: absolute;
+  top: calc(52%);
+  transform: translateY(-100%);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  font-size: calc(3em + 1vw);
+}
+
+#card {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  min-width: 416px;
+  min-height: 600px;
+  background-color: white;
+  transform: translate(0, -80px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#cardTextContainer {
+  width: 100%;
+  height: auto;
+  padding: 48px 64px 40px 64px;
+  font-size: 1.175em;
+}
+
+#cardTextFirst {
+  text-indent: 40px;
+}
+
+.cardText {
+  font-weight: 300;
+}
+.cardBulletPointTitle {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#cardTextAwardTitle {
+  font-weight: 300;
+  text-indent: 40px;
+}
+
+#cardAwardGrid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardAward {
+  display: inline-flex;
+  width: auto;
+  font-weight: 300;
+  font-size: 0.9em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardAward {
+    font-size: calc(4px + 1.25vw);
+  }
+}

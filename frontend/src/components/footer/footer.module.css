@@ -1,0 +1,68 @@
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #262626;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 8px;
+}
+
+#top {
+  display: grid;
+  margin: 40px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionTitle {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+.links {
+  display: flex;
+}
+.links :not(:last-child) {
+  border-right: white solid 1px;
+}
+
+.navLink {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0px 8px;
+}
+.navLink:hover {
+  color: white;
+}
+
+#bottom {
+  margin: 16px 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+#copyrightIcon {
+  height: 16px;
+  width: 16px;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 769px) {
+  .section {
+    border-right: rgb(64, 64, 64) solid 1px;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .links :not(:last-child) {
+    border-right: none;
+  }
+}
