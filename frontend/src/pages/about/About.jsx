@@ -9,7 +9,8 @@ export default function About() {
     <>
       <Navbar />
       <div id={styles.topBlock}>
-        <span id={styles.title}>ABOUT US</span>
+        <img id={styles.img} src="/assets/imgs/landscaping_2.jpg" alt="" />
+        <span id={styles.title}>About us</span>
       </div>
       <div id={styles.card}>
         <div id={styles.cardTextContainer}>

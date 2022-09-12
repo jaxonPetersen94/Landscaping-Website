@@ -7,6 +7,11 @@
   background-color: #287c2f;
 }
 
+#img {
+  pointer-events: none;
+  min-width: 1680px;
+}
+
 #title {
   display: block;
   position: absolute;
