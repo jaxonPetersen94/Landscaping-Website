@@ -10,7 +10,7 @@ import Signin from "./pages/auth/signin/Signin.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/scroll-to-top/ScrollToTop.jsx";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <ScrollToTop />
@@ -28,5 +28,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

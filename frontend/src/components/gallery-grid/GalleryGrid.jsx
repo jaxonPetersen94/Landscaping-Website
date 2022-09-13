@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./galleryGrid.css";
 
-function GalleryGrid() {
+export default function GalleryGrid() {
   const gallery = useRef(null);
   const getVal = (elem, style) => {
     return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
@@ -60,5 +60,3 @@ function GalleryGrid() {
     </div>
   );
 }
-
-export default GalleryGrid;
