@@ -1,0 +1,69 @@
+$border-radius-size: 14px;
+
+#card {
+  min-width: 300px;
+  display: inline-block;
+  position: relative;
+  background: white;
+  border-radius: $border-radius-size + 5;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  margin: 16px 32px;
+}
+
+#img {
+  position: relative;
+  height: 230px;
+  margin-bottom: 20px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+#serviceType {
+  color: #ee5487;
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#serviceName {
+  color: black;
+  line-height: 24pt;
+  font-size: 24pt;
+  font-weight: 700;
+}
+
+#serviceDescriptionList {
+  padding: 16px 0;
+  list-style: none;
+}
+
+.cardStats {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: $border-radius-size;
+  border-bottom-right-radius: $border-radius-size;
+  background: #82bb30;
+  height: 104px;
+}
+.cardStats > :not(:last-child) {
+  border-right: 1px solid darken(#82bb30, 6%);
+}
+
+.statSection {
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+
+.stat {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.statValue {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}

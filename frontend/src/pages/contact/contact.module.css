@@ -7,8 +7,9 @@ img {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
+  padding: 16px 0;
+  min-height: calc(100vh - 100px);
   gap: 8px;
-  height: calc(100vh - 100px);
 }
 
 .section {
