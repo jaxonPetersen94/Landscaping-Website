@@ -20,7 +20,6 @@ $border-radius-size: 14px;
 }
 
 #serviceType {
-  color: #ee5487;
   font-size: 12pt;
   font-weight: 700;
   text-transform: uppercase;
@@ -34,6 +33,10 @@ $border-radius-size: 14px;
 }
 
 #serviceDescriptionList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 136px;
   padding: 16px 0;
   list-style: none;
 }

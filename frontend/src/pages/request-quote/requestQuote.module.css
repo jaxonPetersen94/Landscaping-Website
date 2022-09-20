@@ -1,3 +1,143 @@
 #container {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
+}
+
+#topBlock {
+  display: flex;
+  position: relative;
+  top: 16px;
+  justify-content: center;
+  background-color: #287c2f;
+}
+
+#topBlockimg {
+  pointer-events: none;
+  min-width: 1680px;
+}
+
+#title {
+  display: block;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-100%);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  font-size: calc(3em + 1vw);
+}
+
+#clipboardOval {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -112%);
+  background: #fff6ed;
+  height: 104px;
+  width: calc(384px + 10vw);
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#clipboardTopbar {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -72%);
+  background: #fff6ed;
+  width: 100%;
+  height: 72px;
+}
+
+#formCard {
+  padding: 16px;
+  width: 80%;
+  margin: 56px auto 40px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 416px;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 2px #f1ad75;
+}
+
+.doubleInputContainer {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 8px;
+  width: 90%;
+}
+
+.inputContainer {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  margin-left: 8px;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid #ececec;
+  background-color: #f9f9f9;
+}
+.input:focus {
+  outline: none;
+}
+
+.requiredFieldSymbol {
+  color: red;
+}
+
+#firstTitle {
+  margin: 16px 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#suitCaseImg {
+  margin: 16px 0 8px 0;
+  width: 88px;
+  height: 88px;
+}
+
+#secondTitle {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+#radioBtnsContainer {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.radioLabel {
+  margin-left: 6px;
+}
+
+#textArea {
+  margin: 12px 0 32px 0;
+  width: 64%;
+  min-width: 320px;
+  min-height: 256px;
+}
+
+#raqBtn {
+  margin-bottom: 8px;
+  height: 56px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #42b72a;
 }

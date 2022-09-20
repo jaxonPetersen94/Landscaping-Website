@@ -15,7 +15,7 @@
 #title {
   display: block;
   position: absolute;
-  top: calc(52%);
+  top: 52%;
   transform: translateY(-100%);
   color: white;
   font-weight: 700;

@@ -2,10 +2,14 @@ import React from "react";
 import styles from "./serviceCard.module.scss";
 
 export default function ServiceCard(props) {
+  const color = props.serviceCard.serviceType === "Residential" ? "#ee5487" : "#F6901A";
+
   return (
     <div id={styles.card}>
       <img id={styles.img} src={props.serviceCard.img} alt="service card" />
-      <div id={styles.serviceType}>{props.serviceCard.serviceType}</div>
+      <div id={styles.serviceType} style={{ color: color }}>
+        {props.serviceCard.serviceType}
+      </div>
       <div id={styles.serviceName}>{props.serviceCard.serviceName}</div>
       <ul id={styles.serviceDescriptionList}>
         {props.serviceCard.descriptionBulletPoints.map((point, index) => {
