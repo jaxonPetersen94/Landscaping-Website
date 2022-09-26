@@ -6,6 +6,8 @@ import styles from "./requestQuote.module.css";
 export default function RequestQuote() {
   const firstName = useRef();
   const lastName = useRef();
+  const phoneNumber = useRef();
+  const email = useRef();
   const question = useRef();
 
   return (
@@ -15,52 +17,59 @@ export default function RequestQuote() {
         <div id={styles.topBlock}>
           <img id={styles.topBlockimg} src="/assets/imgs/landscaping_3.jpg" alt="" />
           <span id={styles.title}>Request a Quote</span>
+          <div id={styles.clipboardOval}></div>
+          <div id={styles.clipboardTopbar}></div>
         </div>
-        <div id={styles.clipboardOval}></div>
-        <div id={styles.clipboardTopbar}></div>
+
         <div id={styles.formCard}>
           <h1 id={styles.firstTitle}>Request A Quote</h1>
           <div className={styles.doubleInputContainer}>
             <div className={styles.inputContainer}>
-              <span className={styles.inputLabel}>
+              <label for="firstName" className={styles.inputLabel}>
                 First name <span className={styles.requiredFieldSymbol}>*</span>
-              </span>
-              <input className={styles.input} required ref={firstName} />
+              </label>
+              <input id="firstName" className={styles.input} required ref={firstName} />
             </div>
             <div className={styles.inputContainer}>
-              <span className={styles.inputLabel}>
+              <label for="lastName" className={styles.inputLabel}>
                 Last name <span className={styles.requiredFieldSymbol}>*</span>
-              </span>
-              <input className={styles.input} required ref={lastName} />
+              </label>
+              <input id="lastName" className={styles.input} required ref={lastName} />
             </div>
           </div>
           <div className={styles.doubleInputContainer}>
             <div className={styles.inputContainer}>
-              <span className={styles.inputLabel}>
+              <label for="phoneNumber" className={styles.inputLabel}>
                 Phone Number <span className={styles.requiredFieldSymbol}>*</span>
-              </span>
-              <input className={styles.input} required ref={firstName} />
+              </label>
+              <input
+                id="phoneNumber"
+                className={styles.input}
+                type="tel"
+                required
+                ref={phoneNumber}
+              />
             </div>
             <div className={styles.inputContainer}>
-              <span className={styles.inputLabel}>
+              <label for="email" className={styles.inputLabel}>
                 Email Address <span className={styles.requiredFieldSymbol}>*</span>
-              </span>
-              <input className={styles.input} required ref={lastName} />
+              </label>
+              <input id="email" className={styles.input} type="email" required ref={email} />
             </div>
           </div>
           <img id={styles.suitCaseImg} src="assets/imgs/suitCase.jpg" alt="" />
           <h1 id={styles.secondTitle}>What Are You Looking For?</h1>
           <div id={styles.radioBtnsContainer}>
             <div>
-              <label>
-                <input type="radio" name="radioBtnAnswer" />
-                <span className={styles.radioLabel}>Commercial Services</span>
+              <input id="commercialRadioBtn" type="radio" name="radioBtnAnswer" />
+              <label for="commercialRadioBtn" className={styles.radioLabel}>
+                Commercial Services
               </label>
             </div>
             <div>
-              <label>
-                <input type="radio" name="radioBtnAnswer" />
-                <span className={styles.radioLabel}>Residential Services</span>
+              <input id="residentialRadioBtn" type="radio" name="radioBtnAnswer" />
+              <label for="residentialRadioBtn" className={styles.radioLabel}>
+                Residential Services
               </label>
             </div>
           </div>
@@ -71,9 +80,7 @@ export default function RequestQuote() {
             ref={question}
             type="text"
           />
-          <button id={styles.raqBtn} type="submit">
-            Submit
-          </button>
+          <input type="submit" value="Submit" id={styles.raqBtn} />
         </div>
       </div>
       <Footer />

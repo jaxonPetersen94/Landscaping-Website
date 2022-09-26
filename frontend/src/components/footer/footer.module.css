@@ -44,6 +44,9 @@
 }
 
 #bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 16px 0;
   text-align: center;
   font-weight: 300;

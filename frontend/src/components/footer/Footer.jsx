@@ -44,6 +44,7 @@ export default function Footer() {
         <span>
           Copyright <Copyright id={styles.copyrightIcon} /> 2022 Price Landscaping
         </span>
+        <span>Website by Jaxon Petersen</span>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 #grid-gallery-container {
   margin: 16px 8px;
-  min-height: calc(100vh - 323px);
+  min-height: calc(100vh - 100px);
 }
 
 .full {

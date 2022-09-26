@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
+import { signIn } from "../../../redux/features/auth/authSlice";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import styles from "./signin.module.css";
@@ -7,17 +10,21 @@ import styles from "./signin.module.css";
 export default function Signin() {
   const email = useRef();
   const password = useRef();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleClick = async (e) => {
+  const handleSignIn = (e) => {
+    console.log("Signin.jsx -> handleSignIn()");
     e.preventDefault();
-    console.log("Register - handleClick()");
+    dispatch(signIn());
+    navigate("/");
   };
 
   return (
     <>
       <Navbar />
       <div id={styles.container}>
-        <form id={styles.signInBox} onSubmit={handleClick}>
+        <form id={styles.signInBox} onSubmit={handleSignIn}>
           <h2 style={{ margin: 0 }}>Sign in</h2>
           <input className={styles.input} placeholder="Email" required ref={email} type="email" />
           <input

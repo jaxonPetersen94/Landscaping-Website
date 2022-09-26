@@ -5,7 +5,7 @@ img {
 #container {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: space-evenly;
   justify-content: space-evenly;
   padding: 16px 0;
   min-height: calc(100vh - 100px);
@@ -26,7 +26,7 @@ img {
 #textSection :last-child {
   font-weight: 300;
   font-size: calc(14px + 0.75vw);
-  margin-bottom: 56px;
+  margin-bottom: 32px;
 }
 
 #form * {
@@ -67,4 +67,13 @@ img {
   font-weight: 700;
   border-style: none;
   background-color: #42b72a;
+}
+
+.requiredFieldSymbol {
+  color: red;
+}
+
+#raqLink {
+  display: block;
+  margin-top: 16px;
 }
