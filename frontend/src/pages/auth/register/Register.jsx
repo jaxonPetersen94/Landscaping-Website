@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 import styles from "./register.module.css";
+import { RegisterUser } from "../../../api/auth/api.js";
 
 export default function Register() {
   const name = useRef();
@@ -12,7 +13,12 @@ export default function Register() {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    console.log("Register - handleClick()");
+    const user = {
+      name: name.current.value,
+      email: email.current.value,
+      password: password.current.value,
+    };
+    RegisterUser(user);
   };
 
   return (

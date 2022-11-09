@@ -17,7 +17,6 @@ export default function Navbar() {
     username = `${firstname} ${lastname}`;
 
   const handleSignOut = () => {
-    console.log("Navbar.jsx - handleSignOut()");
     dispatch(signOut());
     navigate("/");
   };

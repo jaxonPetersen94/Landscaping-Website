@@ -12,7 +12,6 @@ export default function Contact() {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    console.log("Contact us - handleClick()");
   };
 
   return (

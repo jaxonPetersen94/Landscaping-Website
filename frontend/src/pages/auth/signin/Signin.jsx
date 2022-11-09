@@ -14,7 +14,6 @@ export default function Signin() {
   const navigate = useNavigate();
 
   const handleSignIn = (e) => {
-    console.log("Signin.jsx -> handleSignIn()");
     e.preventDefault();
     dispatch(signIn());
     navigate("/");
